@@ -2,7 +2,7 @@
  * Player class
  */
 package game.entities;
-
+	
 import display.Window;
 import game.entities.items.Food;
 import game.entities.items.Item;
@@ -39,7 +39,7 @@ public class Player extends Entity {
     private Timer attackAnimationTimer;
     // timer to keep track of when to update general animation
     private Timer animationTimer;
-    // range of frameIndexes for the player
+    // range of frameIndexes for the player	\
     private Range animationFrames;
     // sword
     private Sword sword;
@@ -71,6 +71,7 @@ public class Player extends Entity {
 
         this.animationTimer = this.walkAnimationTimer;
         this.attackAnimationTimer = new Timer(sword.getAttackSpeed() / attack.getSheetWidth());
+        
     }
 
     public void setInventory() {
@@ -302,6 +303,7 @@ public class Player extends Entity {
                 scaleY * 0.2
         );
     }
+    
 
     public Inventory getInventory() {
         return this.inventory;
