@@ -74,9 +74,7 @@ public class Food extends Item {
     public void use() {
         File soundFile = Assets.getRandomFile("assets/sounds/eat");
         Assets.getSound(soundFile.getAbsolutePath()).play();
-        if (Math.random() < 0.5) {
-            File messageFile = Assets.getRandomFile("assets/sounds/messages");
-            Assets.getSound(messageFile.getAbsolutePath()).play();
-        }
+        scene.getPlayer().setUsedFood(true);
     }
 }
+

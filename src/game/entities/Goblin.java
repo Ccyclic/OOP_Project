@@ -76,6 +76,14 @@ public class Goblin extends Entity {
             animationFrames.setRange(0, 11);
             animationTimer = deadAnimationTimer;
             animationFrames.reset();
+            // Add points to the player's score
+            Player player = scene.getPlayer();
+            if (player.hasUsedFood()) {
+                player.addScore(70);
+            } else {
+                player.addScore(50);
+            }
+            player.setUsedFood(false);
 
         }
 
@@ -178,5 +186,8 @@ public class Goblin extends Entity {
 
     private Sound getRandomAudio(Sound[] sounds) {
         return sounds[(int) (Math.random() * sounds.length)];
+    }
+    public boolean isDead() {
+        return dead;
     }
 }

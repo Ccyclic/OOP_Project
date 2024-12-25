@@ -125,4 +125,7 @@ public class Cave extends Scene {
         fpsLabel.render();
         player.getInventory().render();
     }
+
+
+
 }

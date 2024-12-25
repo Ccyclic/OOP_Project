@@ -26,6 +26,24 @@ import java.awt.event.MouseEvent;
 import java.awt.image.BufferedImage;
 
 public class Player extends Entity {
+    private int score = 0;
+
+    public int getScore() {
+        return score;
+    }
+
+    public void addScore(int points) {
+        this.score += points;
+    }
+    private boolean usedFood = false;
+
+    public void setUsedFood(boolean usedFood) {
+        this.usedFood = usedFood;
+    }
+
+    public boolean hasUsedFood() {
+        return usedFood;
+    }
     // different tilesheets for different behaviors
     private TileSheet idle;
     private TileSheet walk;
@@ -266,6 +284,10 @@ public class Player extends Entity {
                 (int) scaleY,
                 null
         );
+        // Draw the score above the player's head
+        graphics.setColor(Color.WHITE);
+        graphics.setFont(new Font("Arial", Font.BOLD, 20));
+        graphics.drawString("Score: " + score, (int) position.x - 30, (int) (position.y - scaleY / 2 + 40));
 
 //        graphics.drawImage(
 //                sword.getImage(),

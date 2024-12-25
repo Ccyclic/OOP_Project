@@ -13,6 +13,7 @@ import java.awt.*;
 import java.awt.image.BufferedImage;
 
 public class Window extends JFrame {
+
     // width + height of frame
     private int width, height;
     // title of window
