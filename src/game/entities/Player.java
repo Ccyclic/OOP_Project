@@ -44,6 +44,9 @@ public class Player extends Entity {
     public boolean hasUsedFood() {
         return usedFood;
     }
+    
+    private final int maxLife = 6;
+    private int life = maxLife;
     // different tilesheets for different behaviors
     private TileSheet idle;
     private TileSheet walk;
@@ -79,6 +82,7 @@ public class Player extends Entity {
         idle = Assets.getTileSheet("assets/tiles/Characters/Human/Idle.png", 32, 32);
         walk = Assets.getTileSheet("assets/tiles/Characters/Human/Walk.png", 32, 32);
         attack = Assets.getTileSheet("assets/tiles/Characters/Human/Attack.png", 32, 32);
+       
         // setup inventory
         // setup image
         this.image = this.walk;
@@ -268,6 +272,7 @@ public class Player extends Entity {
 
         inventory.update();
     }
+    
 
     @Override
     public void render() {

@@ -1,5 +1,5 @@
 /**
- * Entty class
+a * Entty class
  */
 package game.entities;
 

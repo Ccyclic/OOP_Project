@@ -18,7 +18,7 @@ import java.util.function.Consumer;
 public class Inventory extends UI {
     private Player player;
     public Item[] inventory;
-    public int inventorySize = 8;
+    public int inventorySize = 4;
     private int iterateIndex = 0;
     private Vector2 inventoryTileSize;
     private Vector2 inventoryStartDrawLocation;

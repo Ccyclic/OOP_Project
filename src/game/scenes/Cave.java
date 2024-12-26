@@ -1,5 +1,5 @@
 /**
- * Cave scene
+  * Cave scene
  */
 package game.scenes;
 
@@ -10,6 +10,7 @@ import game.entities.*;
 import utils.math.Rect;
 import utils.math.Vector2;
 
+import java.awt.Image;
 import java.util.Collections;
 import java.util.List;
 
@@ -17,6 +18,7 @@ public class Cave extends Scene {
     // map
     public Map map;
     public FPSLabel fpsLabel;
+    private Image heart, half_heart, empty_heart;
     @Override
     public void init() {
         // create a map
@@ -41,7 +43,7 @@ public class Cave extends Scene {
                 new Vector2(750, 750 * widthToHeight),
                 new Vector2(map.getWidth() - 16, map.getHeight() + 16));
 
-        // init the player @    pos                            scale
+        // init the player @  
         player = new Player(new Vector2(200f, 64f), new Vector2(4, 4));
         // init player
         player.init();

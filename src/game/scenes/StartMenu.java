@@ -42,12 +42,27 @@ public class StartMenu extends Scene {
             changeScene();
         };
         elements.add(startButton);
-// Create the Restart button
-        Button restartButton = new Button("Restart", new Vector2(50, 160), new Rect(0, 0, 100, 50));
-        restartButton.onClick = () -> {
-            restartGame();
-        };
-        elements.add(restartButton);
+        // Create the Restart button
+//        Button restartButton = new Button("Restart", new Vector2(50, 160), new Rect(0, 0, 100, 50));
+//        restartButton.onClick = () -> {
+//            restartGame();
+//        };
+//        elements.add(restartButton);
+        
+        Button upButton = new Button("W: Up", new Vector2(400, 150), new Rect(0, 0, 60, 40));
+        elements.add(upButton);
+        Button leftButton = new Button("A: Left", new Vector2(330, 200), new Rect(0, 0, 60, 40));
+        elements.add(leftButton);
+        Button rightButton = new Button("D: Right", new Vector2(470, 200), new Rect(0, 0, 60, 40));
+        elements.add(rightButton);
+        Button downButton = new Button("S: Down", new Vector2(400, 200), new Rect(0, 0, 60, 40));
+        elements.add(downButton);
+        Button clickButton = new Button("Use Item: Left Click", new Vector2(560, 150), new Rect(0, 0, 120, 40));
+        elements.add(clickButton);
+        Button chooseButton = new Button("Choosse Item: 1, 2, 3, 4", new Vector2(550, 200), new Rect(0, 0, 140, 40));
+        elements.add(chooseButton);
+       
+        
         camera.init();
         backgroundMap.camera = camera;
         backgroundMap.setupImages();
