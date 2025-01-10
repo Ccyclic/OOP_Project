@@ -1,5 +1,7 @@
+package main;
 import display.Window;
 import game.scenes.StartMenu;
+
 
 public class main {
     public static void main(String[] args) {

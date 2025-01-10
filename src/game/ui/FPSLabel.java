@@ -42,15 +42,5 @@ public class FPSLabel extends UI {
         updateTimer.update();
     }
     
-//    public void drawPlayerLife(Graphics2D g2) {
-//    	int x = 20;
-//    	int y = 20;
-//    	int i = 0;
-//    	
-//    	while(i<maxLife/2) {
-//    		g2.drawImage(heart, (int) x, (int) y, null);
-//    		i++;
-//    		x+=20;
-//    	}
-//    }
+
 }

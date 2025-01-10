@@ -308,7 +308,7 @@ public class Player extends Entity {
 //                (int) (hitbox.position.y),
 //                (int) hitbox.size.x,
 //                (int) hitbox.size.y
-//        );aaaaaaaaaa
+//        );
         for (int i = 0; i < inventory.getInventorySize(); i++) {
             Item item = inventory.get(i);
             if (item != null) {

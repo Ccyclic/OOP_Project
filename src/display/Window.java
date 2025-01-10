@@ -35,10 +35,7 @@ public class Window extends JFrame {
     // current window ref
     private static Window ref;
 
-    /**
-     * Get window reference
-     * @return Current window
-     */
+
     public static Window get() {
         if (ref == null) {
             ref = new Window();
@@ -46,12 +43,7 @@ public class Window extends JFrame {
         return ref;
     }
 
-    /**
-     * Init the window
-     * @param title Title of the window
-     * @param width Width of the window
-     * @param height Height of the window
-     */
+
     public void init(String title, int width, int height) {
         // setup inputs
         keyboardInput = new KeyInput();
@@ -82,9 +74,7 @@ public class Window extends JFrame {
         setLocationRelativeTo(null);
     }
 
-    /**
-     * Game loop
-     */
+
     public void loop() {
         running = true;
         Graphics2D g = (Graphics2D) getGraphics();
@@ -106,10 +96,7 @@ public class Window extends JFrame {
         }
     }
 
-    /**
-     * Get the buffer graphics
-     * @return Buffer graphics
-     */
+
     public static Graphics2D getBuffer() {
         return get().buffer;
     }

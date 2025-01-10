@@ -15,9 +15,7 @@ public class Food extends Item {
     private Vector2 size;
     private Scene scene;
 
-    /**
-     * @param e Owner of item
-     */
+
     public Food(Entity e) {
         super(e);
     }

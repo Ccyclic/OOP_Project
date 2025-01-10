@@ -42,12 +42,6 @@ public class StartMenu extends Scene {
             changeScene();
         };
         elements.add(startButton);
-        // Create the Restart button
-//        Button restartButton = new Button("Restart", new Vector2(50, 160), new Rect(0, 0, 100, 50));
-//        restartButton.onClick = () -> {
-//            restartGame();
-//        };
-//        elements.add(restartButton);
         
         Button upButton = new Button("W: Up", new Vector2(400, 150), new Rect(0, 0, 60, 40));
         elements.add(upButton);

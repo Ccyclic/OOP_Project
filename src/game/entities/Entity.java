@@ -11,7 +11,7 @@ import utils.tile.TileImage;
 import utils.tile.TileSheet;
 import utils.math.Vector2;
 
-// implemented comparable to sort by y-axis to change z-index render order
+
 public abstract class Entity implements Comparable<Entity> {
     // position
     protected Vector2 position;
@@ -31,7 +31,7 @@ public abstract class Entity implements Comparable<Entity> {
     protected boolean attacking = false;
     // the attack range of entity
     protected double attackRange = 40.0;
-//    protected double attackRange = 10000.0;
+    // protected double attackRange = 10000.0;
     // what slot they have equipped
     protected int equippedSlot = 0;
     // if they have to reset animation

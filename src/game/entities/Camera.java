@@ -67,9 +67,7 @@ public class Camera extends Entity {
         // add the position
         position.x += dx;
         position.y += dy;
-        // translate the buffer by dx and dy
-        // TODO: ADD THIS BACK
-//        if (KeyInput.isPressed(KeyEvent.VK_SPACE))
+
             Window.getBuffer().translate(-dx, -dy);
     }
 

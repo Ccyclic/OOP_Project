@@ -11,7 +11,7 @@ import utils.resources.Sound;
 import java.awt.image.BufferedImage;
 
 public abstract class Item {
-    // item stats
+    // item stats(might be useless)
     protected int baseDamage = 0;
     protected double critChance = 0.0;
     protected double critMultiplier = 0;
